@@ -1,0 +1,20 @@
+---
+packages:
+- name: netdata
+  version: b544ce7a8ac6821ba1cf0e8da547e4bfecff0af1
+  fingerprint: b544ce7a8ac6821ba1cf0e8da547e4bfecff0af1
+  sha1: e0bcc22553410f14d66774779e6fab6695347711
+  dependencies: []
+jobs:
+- name: netdata
+  version: fc4ef86da037bb89c2bfc803b414d24f572584b6
+  fingerprint: fc4ef86da037bb89c2bfc803b414d24f572584b6
+  sha1: 9f4abdcdcc693209da4a47a86111ecd50f0ce0bc
+license:
+  version: 8664f710d717d4d8b539a35813113cf20786e418
+  fingerprint: 8664f710d717d4d8b539a35813113cf20786e418
+  sha1: e0fc0da37f334d243f845b90dfdd4e4831c9f19f
+commit_hash: e01a458f
+uncommitted_changes: true
+name: netdata
+version: 1.0.0
