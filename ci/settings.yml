@@ -1,7 +1,7 @@
 ---
 meta:
-  name:    netdata-boshrelease
-  release: Netdata
+  name:    netdata
+  release: netdata
   target:  sw
   url:     https://ci.vsphere.starkandwayne.com
 
