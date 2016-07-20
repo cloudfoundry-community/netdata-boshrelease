@@ -1,1 +1,5 @@
---- {}
+---
+netdata/netdata-1.2.0.tar.gz:
+  object_id: 1a085703-f04b-47e8-a8d2-f74a6a8cd5cf
+  sha: cd3d03a8e83f0abfd1872906b02fa800a1d9b1d2
+  size: 1538219
