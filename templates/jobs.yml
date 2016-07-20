@@ -9,9 +9,9 @@ update:
   serial: false
 
 jobs:
-  - name: just_install_packages
+  - name: netdata
     templates:
-    - name: just_install_packages
+    - name: netdata
       release: netdata
     instances: 1
     persistent_disk: 0

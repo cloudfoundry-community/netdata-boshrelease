@@ -1,0 +1,31 @@
+---
+name: netdata
+packages:
+- netdata
+templates:
+  bin/ctl: bin/ctl
+  bin/monit_debugger: bin/monit_debugger
+  config/config.conf.erb: config/config.conf
+  config/apps_groups.conf.erb: config/apps_groups.conf
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+
+properties:
+
+  netdata.apps:
+    description: A list of apps process to monitor
+    example: |
+      netdata.apps:
+      - "ssh: ssh* scp"
+      - "X: X lightdm xdm pulseaudio gkrellm"
+      - "xfce: xfwm4 xfdesktop xfce* Thunar xfsettingsd"
+      - "gnome: gnome-* gdm gconfd-2"
+      - "named: named rncd"
+      - "clam: clam* *clam"
+      - "cups: cups*"
+      - "ntp: ntp*"
+      - "deluge: deluge*"
+      - "vbox: vbox* VBox*"
+      - "log: ulogd syslog* rsyslog* l"
+    default: []

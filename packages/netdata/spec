@@ -1,0 +1,5 @@
+---
+name: netdata
+dependencies: []
+files:
+- netdata/*.tar.gz

@@ -1,0 +1,5 @@
+check process netdata
+  with pidfile /var/vcap/sys/run/netdata/netdata.pid
+  start program "/var/vcap/jobs/netdata/bin/monit_debugger netdata_ctl '/var/vcap/jobs/netdata/bin/ctl start'"
+  stop program "/var/vcap/jobs/netdata/bin/monit_debugger netdata_ctl '/var/vcap/jobs/netdata/bin/ctl stop'"
+  group vcap

@@ -1,0 +1,15 @@
+set -e # exit immediately if a simple command exits with a non-zero status
+set -u # report the usage of uninitialized variables
+
+export VERSION=1.2.0
+
+cd netdata
+
+tar -zxf netdata-${VERSION}.tar.gz
+
+cd netdata-${VERSION}
+
+make configure
+./configure  --prefix=${BOSH_INSTALL_TARGET}
+make
+make install
