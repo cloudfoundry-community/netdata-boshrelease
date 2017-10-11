@@ -10,7 +10,7 @@ To use this bosh release, first upload it to your bosh:
 bosh target BOSH_HOST
 git clone https://github.com/cloudfoundry-community/netdata-boshrelease.git
 cd netdata-boshrelease
-bosh upload release releases/netdata-1.yml
+bosh upload release releases/netdata/netdata-1.0.0.yml
 ```
 
 For [bosh-lite](https://github.com/cloudfoundry/bosh-lite), you can quickly create a deployment manifest & deploy a cluster:
